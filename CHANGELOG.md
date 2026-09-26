@@ -10,7 +10,6 @@
 - Added Z-score and IQR anomaly detection baselines.
 - Added anomaly visualization for baseline methods.
 
-# Changelog
 
 ## [0.1.1] 
 
@@ -27,3 +26,20 @@
 - Added Isolation Forest anomaly labels and anomaly scores.
 - Added analysis of the most anomalous observations.
 - Added Isolation Forest anomaly visualization.
+
+
+## [0.2.0] 
+
+### Added
+- Added Isolation Forest anomaly detection with engineered weather features.
+- Added Isolation Forest anomaly labels and anomaly scores.
+- Added Isolation Forest anomaly visualization.
+- Added PyTorch Autoencoder for unsupervised anomaly detection.
+- Added chronological train, validation, and test split for Autoencoder training.
+- Added feature scaling using StandardScaler.
+- Added Autoencoder training and validation loss tracking.
+- Added reconstruction error as an anomaly score.
+- Added percentile based anomaly thresholding.
+- Added Autoencoder anomaly visualization.
+- Added comparison of Z-score, IQR, Isolation Forest, and Autoencoder methods.
+- Added analysis of anomaly agreement between Isolation Forest and Autoencoder.
