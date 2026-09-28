@@ -64,3 +64,24 @@
 - Added anomaly visualization for temperature, humidity, and pressure.
 - Added evaluation summary for the test dataset.
 - Documented unsupervised evaluation approach without ground truth anomaly labels.
+
+
+## [0.5.0] 
+
+### Added
+- Extracted weather data loading and preprocessing into `src/preprocessing.py`.
+- Created `src/features.py` for time series feature engineering, including changes, rolling statistics, and deviations.
+- Created `src/anomaly_models.py` to organize Isolation Forest and Autoencoder implementations.
+- Created `src/scoring.py` for score normalization, combined anomaly scoring, and severity classification.
+- Created `src/pipeline.py` to integrate preprocessing, feature engineering, model training, anomaly detection, and scoring into a reusable pipeline.
+- Added chronological 70/15/15 training, validation, and testing splits.
+- Added validation-based reconstruction error thresholding for Autoencoder anomaly detection.
+- Saved pipeline results to `data/processed/weather_anomaly_scores.csv`.
+- Validated the pipeline output for missing scores, severity labels, and score distributions.
+
+### Results
+- Generated 6,574 test period observations with combined anomaly scores and severity labels.
+- Detected 982 observations as anomalies using the combined Isolation Forest and Autoencoder predictions.
+- Produced Low, Medium, and High severity classifications.
+- Confirmed that all output observations have combined scores and severity labels.
+
