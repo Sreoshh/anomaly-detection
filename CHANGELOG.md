@@ -53,3 +53,14 @@
 - Added anomaly severity classification.
 - Added unified anomaly results with weather measurements and model flags.
 - Added processed weather anomaly score dataset.
+
+
+## [0.4.0] 
+
+### Added
+- Added anomaly temporal pattern analysis.
+- Added Isolation Forest and Autoencoder agreement analysis.
+- Added anomaly severity distribution analysis.
+- Added anomaly visualization for temperature, humidity, and pressure.
+- Added evaluation summary for the test dataset.
+- Documented unsupervised evaluation approach without ground truth anomaly labels.
