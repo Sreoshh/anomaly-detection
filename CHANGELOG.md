@@ -43,3 +43,13 @@
 - Added Autoencoder anomaly visualization.
 - Added comparison of Z-score, IQR, Isolation Forest, and Autoencoder methods.
 - Added analysis of anomaly agreement between Isolation Forest and Autoencoder.
+
+
+## [0.3.0] 
+
+### Added
+- Added normalized Isolation Forest and Autoencoder anomaly scores.
+- Added combined anomaly score using both ML models.
+- Added anomaly severity classification.
+- Added unified anomaly results with weather measurements and model flags.
+- Added processed weather anomaly score dataset.
