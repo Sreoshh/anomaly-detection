@@ -94,4 +94,5 @@ With both servers running, check:
 - Detected anomalies are model generated candidates and are not necessarily confirmed weather events.
 
 ## License
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
